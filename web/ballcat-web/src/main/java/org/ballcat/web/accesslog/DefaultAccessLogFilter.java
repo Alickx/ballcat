@@ -158,7 +158,7 @@ public class DefaultAccessLogFilter extends AbstractAccessLogFilter {
 			AccessLogging annotation = AnnotationUtil.getAnnotation(handlerMethod.getMethod(), AccessLogging.class);
 
 			if (annotation != null) {
-				return annotation.recordBody();
+				return annotation.recordRequestBody();
 			}
 
 			return false;

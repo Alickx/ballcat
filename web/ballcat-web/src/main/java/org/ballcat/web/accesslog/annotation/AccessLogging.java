@@ -12,10 +12,10 @@ import java.lang.annotation.*;
 public @interface AccessLogging {
 
 	/**
-	 * 是否记录 body
+	 * 是否记录请求体
 	 *
 	 * @return boolean
 	 */
-	boolean recordBody() default true;
+	boolean recordRequestBody() default true;
 
 }
